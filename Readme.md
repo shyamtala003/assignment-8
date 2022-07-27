@@ -19,7 +19,7 @@
 
 
 
-## This Project took around 03:00 Hours to complate.
+## This Project took around 00:30 Hours to complate.
 
 ## Author
 
