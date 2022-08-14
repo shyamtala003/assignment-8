@@ -18,7 +18,7 @@ body
 .main-div {
     width: 100%;
     height: 100vh;
-    padding-inline: 150px;
+    padding-inline: 7%;
 }
 
 nav {
@@ -36,6 +36,10 @@ nav .nav-items {
     display: flex;
     gap: 30px;
 }
+nav .menuIcon
+{
+    display: none;
+}
 
 nav .nav-items h5.nav-item {
     font-family: var(--font-primary);
@@ -51,6 +55,36 @@ button.signin-btn {
     color: #ffffff;
     border: none;
     font-weight: 700;
+}
+
+@media screen and (max-width:880px) {
+    nav img
+    {
+        width: 80px;
+    }
+
+    nav .menuIcon
+    {
+        display: inline;
+    }
+    nav .nav-items
+    {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        display: none;
+        top: 5%;
+        right: 7%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuIcon:focus ~ .nav-items
+    {
+        display: flex;
+    }
+ 
 }
 .intro-section
 {
@@ -116,4 +150,11 @@ img.vector-dot
     position: absolute;
     top: 78%;
     right: 92%;
+}
+
+@media screen and (max-width:880px) {
+    .imgs-div
+    {
+        display: none;
+    }
 }
